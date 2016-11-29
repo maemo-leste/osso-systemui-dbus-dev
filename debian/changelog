@@ -1,0 +1,30 @@
+osso-systemui-dbus-dev (0.1.3+0m5) unstable; urgency=low
+
+  * This entry has been added by BIFH queue processor
+    Suffix +0m5 added to package revision
+
+ -- Attiq Malik <ext-attiq.1.malik@nokia.com>  Wed, 11 Nov 2009 11:04:38 +0200
+
+osso-systemui-dbus-dev (0.1.3) unstable; urgency=low
+
+  * Add ALARM_DIALOG_NOT_RINGING
+
+ -- Philippe De Swert <philippe.de-swert@nokia.com>  Wed, 28 Oct 2009 15:14:35 +0200
+
+osso-systemui-dbus-dev (0.1.2) unstable; urgency=low
+
+  * Add alarm dialog status signalling. Fixes: NB#126785
+
+ -- Philippe De Swert <philippe.de-swert@nokia.com>  Mon, 06 Jul 2009 16:00:18 +0300
+
+osso-systemui-dbus-dev (0.1.1) unstable; urgency=low
+
+  * Fix uploaders in debian/control.
+
+ -- Santtu Lakkala <ext-santtu.1.lakkala@nokia.com>  Tue, 26 Sep 2006 13:02:57 +0300
+
+osso-systemui-dbus-dev (0.1.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- Santtu Lakkala <ext-santtu.1.lakkala@nokia.com>  Tue, 19 Sep 2006 19:57:32 +0300

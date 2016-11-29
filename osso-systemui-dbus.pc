@@ -1,0 +1,9 @@
+prefix=/usr
+includedir=${prefix}/include
+
+Name: osso-systemui
+Description: System UI
+Version: 0.1.3
+Requires:
+Libs:
+Cflags: -I${includedir}
