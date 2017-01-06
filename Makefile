@@ -24,6 +24,7 @@ INCLUDE_FILES := \
 
 .PHONY: doc
 doc:
+	-mkdir $(DOCDIR)
 	@$(DOXYGEN) 2> $(TOPDIR)/doc/warnings > /dev/null
 
 clean:
