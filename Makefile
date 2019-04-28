@@ -5,7 +5,7 @@
 # Author: David Weinehall <david.weinehall@nokia.com>
 
 INSTALL_DIR := install -d
-INSTALL_DATA := install -o root -g root --mode=644
+INSTALL_DATA := install -o root -g root -m 644
 
 DOXYGEN := doxygen
 
