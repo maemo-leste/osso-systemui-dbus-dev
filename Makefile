@@ -11,6 +11,7 @@ DOXYGEN := doxygen
 
 PCDIR := $(DESTDIR)/usr/lib/pkgconfig
 INCLUDEDIR := $(DESTDIR)/usr/include/systemui
+DOCINSTALLDIR := $(DESTDIR)/usr/share/doc/osso-systemui-dbus-dev/html
 
 TOPDIR := $(shell /bin/pwd)
 INCDIR := $(TOPDIR)/include/systemui
@@ -24,7 +25,7 @@ INCLUDE_FILES := \
 
 .PHONY: doc
 doc:
-	-mkdir $(DOCDIR)
+	-mkdir -p $(DOCDIR)
 	@$(DOXYGEN) 2> $(TOPDIR)/doc/warnings > /dev/null
 
 clean:
@@ -34,9 +35,10 @@ clean:
 
 .PHONY: install
 install: doc
-	$(INSTALL_DIR) $(PCDIR) $(INCLUDEDIR)				&&\
+	$(INSTALL_DIR) $(PCDIR) $(INCLUDEDIR) $(DOCINSTALLDIR) &&\
 	$(INSTALL_DATA) $(PCFILE) $(PCDIR)				&&\
 	$(INSTALL_DATA) $(INCLUDE_FILES) $(INCLUDEDIR)
+	$(INSTALL_DATA) doc/html/* $(DOCINSTALLDIR)
 
 .PHONY: distclean
 distclean: clean

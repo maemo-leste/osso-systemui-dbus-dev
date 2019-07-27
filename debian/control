@@ -5,7 +5,7 @@ Maintainer: David Weinehall <david.weinehall@nokia.com>
 Uploaders: Santtu Lakkala <ext-santtu.1.lakkala@nokia.com>, Philippe De Swert <philippe.de-swert@nokia.com>
 Build-Depends: debhelper (>= 4.1.0)
 Build-Depends-Indep: doxygen
-Standards-Version: 3.6.2.1
+Standards-Version: 4.3.0
 
 Package: osso-systemui-dbus-dev
 Section: devel
