@@ -10,6 +10,7 @@ Standards-Version: 4.3.0
 Package: osso-systemui-dbus-dev
 Section: devel
 Architecture: all
+Multi-arch: foreign
 Provides: osso-systemui-alarm-dev, osso-systemui-actingdead-dev
 Replaces: osso-systemui-alarm-dev, osso-systemui-actingdead-dev
 Conflicts: osso-systemui-dev (<< 0.1.7.0)
