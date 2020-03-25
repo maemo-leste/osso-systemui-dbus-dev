@@ -1,8 +1,8 @@
-osso-systemui-dbus-dev (0.1.3) unstable; urgency=medium
+osso-systemui-dbus-dev (0.1.4) unstable; urgency=medium
 
   * enable git builds
 
- -- Ivan J. <parazyd@dyne.org>  Tue, 12 Sep 22:54:00 +0200
+ -- Ivan J. <parazyd@dyne.org>  Tue, 12 Sep 2017 22:54:00 +0200
 
 osso-systemui-dbus-dev (0.1.3+0m5) unstable; urgency=low
 
