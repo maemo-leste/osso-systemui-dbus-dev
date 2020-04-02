@@ -6,11 +6,13 @@
 
 INSTALL_DIR := install -d
 INSTALL_DATA := install -o root -g root -m 644
+INSTALL_DOC := cp -r
 
 DOXYGEN := doxygen
 
 PCDIR := $(DESTDIR)/usr/lib/pkgconfig
 INCLUDEDIR := $(DESTDIR)/usr/include/systemui
+DOCUMENTATION := $(DESTDIR)/usr/share/doc/osso-systemui-dbus-dev
 
 TOPDIR := $(shell /bin/pwd)
 INCDIR := $(TOPDIR)/include/systemui
@@ -34,9 +36,10 @@ clean:
 
 .PHONY: install
 install: doc
-	$(INSTALL_DIR) $(PCDIR) $(INCLUDEDIR)				&&\
-	$(INSTALL_DATA) $(PCFILE) $(PCDIR)				&&\
+	$(INSTALL_DIR) $(PCDIR) $(INCLUDEDIR) $(DOCUMENTATION)
+	$(INSTALL_DATA) $(PCFILE) $(PCDIR)
 	$(INSTALL_DATA) $(INCLUDE_FILES) $(INCLUDEDIR)
+	$(INSTALL_DOC) $(DOCDIR)/html $(DOCUMENTATION)
 
 .PHONY: distclean
 distclean: clean

@@ -1,3 +1,0 @@
-debian/tmp/usr/lib/pkgconfig/*
-debian/tmp/usr/include/systemui/*
-doc/html /usr/share/doc/osso-systemui-dbus-dev/

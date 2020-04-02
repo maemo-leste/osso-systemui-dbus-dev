@@ -3,14 +3,14 @@ Section: devel
 Priority: optional
 Maintainer: David Weinehall <david.weinehall@nokia.com>
 Uploaders: Santtu Lakkala <ext-santtu.1.lakkala@nokia.com>, Philippe De Swert <philippe.de-swert@nokia.com>
-Build-Depends: debhelper (>= 4.1.0)
+Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: doxygen
-Standards-Version: 3.6.2.1
+Standards-Version: 4.3.0
 
 Package: osso-systemui-dbus-dev
 Section: devel
 Architecture: all
-Depends: ${shlibs:Depends}
+Multi-arch: foreign
 Provides: osso-systemui-alarm-dev, osso-systemui-actingdead-dev
 Replaces: osso-systemui-alarm-dev, osso-systemui-actingdead-dev
 Conflicts: osso-systemui-dev (<< 0.1.7.0)
